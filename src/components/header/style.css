@@ -1,0 +1,124 @@
+
+header {
+    height: 70px;
+    padding-inline: 50px;
+    padding-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-background {
+    position: absolute; 
+    top: 0; 
+    left: 52.1%; 
+    transform: translateX(-50%); 
+    z-index: 100; 
+    pointer-events: none; 
+}
+
+.logo-text {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.avatar {
+    background-image: url(../../media/my_avatar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 13px;
+}
+
+.button_ready{
+    height: 45px;
+    width: 135px;
+    border: 0.5px solid gray;
+    background: transparent;
+    border-radius: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    display: none;
+    cursor: default;
+}
+
+
+.button_ready_on{
+    height: 45px;
+    width: 135px;
+    border: 0.5px solid gray;
+    background: transparent;
+    border-radius: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 1s;
+    display: block;
+    cursor: pointer;
+    animation: button_ready_animation 1s;
+}
+@keyframes button_ready_animation{
+    from{
+        opacity: 0;
+        
+    }to{
+        opacity: 1;
+    }
+}
+
+
+.button-ready-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.nav-button {
+    position: relative;
+    padding: 10px 20px;
+    background: #0a192f; 
+    border: 1px solid #71717A; 
+    color: #ffffff; 
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.nav-button:hover {
+    background: linear-gradient(45deg, #0a192f, #5bd3ee4d);
+    border-color: #5bd3ee;
+    box-shadow: 0 0 15px 5px rgba(91, 211, 238, 0.5); 
+    color: #ffffff; 
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(91, 211, 238, 0.3), transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.nav-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
