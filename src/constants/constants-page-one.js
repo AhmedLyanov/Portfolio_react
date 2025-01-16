@@ -1,5 +1,6 @@
 //header
 const name_dev = 'Lyanov Ahmed'
+const title_dev = 'DevAhmed'
 const button_nav_header_1 = 'History'
 const button_nav_header_2 = 'My projects'
 //main
@@ -13,7 +14,8 @@ const constants_set = {
     name_dev,
     button_nav_header_1,
     button_nav_header_2,
-    main_description_dev
+    main_description_dev,
+    title_dev
 }
 
 export default constants_set;
