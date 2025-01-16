@@ -9,7 +9,7 @@ const Header = () => {
     <header>
       <div className="header" role="main_content_header" aria-label="Main header section">
         <div className="logo">
-          <span className="logo-text" aria-label="Portfolio logo">{constants_set.name_dev}</span>
+          <span className="logo-text" aria-label="Portfolio logo">{constants_set.title_dev}</span>
         </div>
         <img src={background_effect} class="header-background" loading="lazy"/>
         <div className="navigation-buttons">
