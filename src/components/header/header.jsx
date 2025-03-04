@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
 import './style.css';
 import '../default-style.css';
 import background_effect from '../../media/background_light_1.png';
@@ -15,14 +14,10 @@ const Header = () => {
         <img src={background_effect} className="header-background" loading="lazy" alt="Background effect" />
         <div className="navigation-buttons">
           <div className="button-wrapper">
-            <Link to="/"> 
               <button className="nav-button" aria-label="View my history">{constants_set.button_nav_header_1}</button>
-            </Link>
           </div>
           <div className="button-ready-container">
-            <Link to="/logo"> 
               <button className="nav-button" aria-label="View my projects">{constants_set.button_nav_header_2}</button>
-            </Link>
           </div>
         </div>
       </div>
